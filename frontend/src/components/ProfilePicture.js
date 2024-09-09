@@ -7,7 +7,7 @@ function ProfilePicture() {
 
         <Box textAlign="center" mb={6}>
 
-            <Image borderRadius="full" boxSize="150px" src={profile} alt="Profile Picture" mx="auto" />
+            <Image borderRadius="full" boxSize={["100px", "120px", "150px"]} src={profile} alt="Profile Picture" mx="auto" />
 
         </Box>
 

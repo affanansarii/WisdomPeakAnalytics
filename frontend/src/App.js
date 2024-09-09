@@ -1,5 +1,5 @@
 import './App.css';
-import { Box, Container, VStack } from '@chakra-ui/react';
+import { Box, Flex, VStack } from '@chakra-ui/react';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import ProfilePicture from './components/ProfilePicture';
@@ -19,53 +19,64 @@ function App() {
 
   return (
 
-    <Box bg="gray.100" p={4} textAlign="center">
+    <Box bg="white.100" p={4} textAlign="center">
 
-      <Box m={4}>
+      <Box m={4} width="98%">
         <Navbar />
       </Box>
 
+      <VStack spacing={8}>
 
-      <Container maxW="container.md" p={4}>
-
-        <VStack spacing={8}>
-          <Box className="animate__animated animate__fadeInDown">
-            <Header />
-          </Box>
+        <Flex mt={10} style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }} p={8} borderRadius="10px" width="98%" flexDirection={{ base: "column", md: "row" }} display={{ base: "row", md: "flex" }}>
           <Box className="animate__animated animate__fadeInLeft">
             <ProfilePicture />
           </Box>
-          <Box className="animate__animated animate__fadeInRight">
-            <Timeline />
-          </Box>
-          <Box className="animate__animated animate__fadeInLeft">
-            <Experience />
-          </Box>
-          <Box className="animate__animated animate__fadeInRight">
-            <Education />
-          </Box>
-          <Box className="animate__animated animate__fadeInLeft">
-            <Skills />
-          </Box>
           <Box className="animate__animated animate__fadeInDown">
-            <Portfolio />
+            <Header />
           </Box>
-        </VStack>
+        </Flex>
 
-        <Box textAlign="center" mb={4} p={4}>
-
-          <Hobbies />
-          <Contact />
-          <ContactForm />
-          <PDFDownloadButton />
-
+        <Box className="animate__animated animate__fadeInRight" style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }} p={8} borderRadius="10px" width="98%">
+          <Timeline />
         </Box>
 
-        <Box>
+        <Box className="animate__animated animate__fadeInLeft" style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }} p={8} borderRadius="10px" width="98%">
+          <Experience />
+        </Box>
+
+        <Box className="animate__animated animate__fadeInRight" style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }} p={8} borderRadius="10px" width="98%">
+          <Education />
+        </Box>
+
+        <Box className="animate__animated animate__fadeInLeft" style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }} p={8} borderRadius="10px" width="98%">
+          <Skills />
+        </Box>
+
+        <Box className="animate__animated animate__fadeInDown" style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }} p={8} borderRadius="10px" width="98%">
+          <Portfolio />
+        </Box>
+
+        <Box style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }} p={8} borderRadius="10px" width="98%">
+          <Hobbies />
+        </Box>
+
+        <Box style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }} p={8} borderRadius="10px" width="98%">
+          <Contact />
+        </Box>
+
+        <Box style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }} p={8} borderRadius="10px" width="98%">
+          <ContactForm />
+        </Box>
+
+        <Box style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }} p={8} borderRadius="10px" width="98%">
+          <PDFDownloadButton />
+        </Box>
+
+        <Box style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }} p={8} borderRadius="10px" width="98%">
           <LocationMap />
         </Box>
 
-      </Container>
+      </VStack>
 
     </Box>
 

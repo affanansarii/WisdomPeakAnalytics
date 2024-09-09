@@ -8,13 +8,13 @@ function Timeline() {
         <VerticalTimeline>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
-                contentStyle={{ background: '#3182CE', color: '#fff' }}
+                contentStyle={{ background: '#3182CE' }}
                 contentArrowStyle={{ borderRight: '7px solid #3182CE' }}
                 date="2020 - Present"
                 iconStyle={{ background: '#3182CE', color: '#fff' }}
             >
-                <Heading size="sm">Senior Developer at XYZ Company</Heading>
-                <Text>
+                <Heading size="sm" style={{ color: "#2D3748" }}>Senior Developer at XYZ Company</Heading>
+                <Text style={{ color: "#fff" }}>
                     Working as a full-stack developer, specializing in React and Node.js.
                 </Text>
             </VerticalTimelineElement>

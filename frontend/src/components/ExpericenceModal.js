@@ -1,4 +1,4 @@
-import { ViewIcon } from "@chakra-ui/icons";
+import { CloseIcon, ViewIcon } from "@chakra-ui/icons";
 import { Text, Button, useDisclosure, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter } from "@chakra-ui/react";
 
 function ExperienceModal({ job }) {
@@ -22,7 +22,7 @@ function ExperienceModal({ job }) {
                         <Text>{job.achievements}</Text>
                     </ModalBody>
                     <ModalFooter>
-                        <Button onClick={onClose}>Close</Button>
+                        <Button onClick={onClose} colorScheme="red" leftIcon={<CloseIcon />}>Close</Button>
                     </ModalFooter>
                 </ModalContent>
             </Modal>
